@@ -1,0 +1,42 @@
+@font-face {
+  src: url("https://res.cloudinary.com/seunsanyaa/raw/upload/v1638778653/OktaNeue-SemiBold_pttfou.ttf");
+font-family: 'Okta Bold';
+}
+
+.container{
+  padding: 8em 5em;
+
+}
+.hithere{
+
+  font-weight: 400;
+margin: unset;
+  line-height: 41px;
+  font-size: 1.4em;
+}
+
+.smiley{
+  padding-left: 0.5em;
+}
+
+.aboutMe{
+  padding-top: 0.4em;
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 146%;
+  font-family: "Okta Bold";
+  margin: unset;
+}
+
+.scrolltrigger{
+
+  padding-top: 4em;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  line-height: 27px;
+}
+
+.arrow{
+  padding-left: 1em;
+}

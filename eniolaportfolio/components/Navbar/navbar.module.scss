@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Okta';
+  src: url('https://res.cloudinary.com/seunsanyaa/raw/upload/v1638778212/Groteskly_Yours_-_Okta_Neue_UltraLight_hlnfue.otf') ;
+}
+
+
+
+.nav{
+font-family: Okta;
+  padding-top: 1em;
+
+}
+.NavbarContainer{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.profileImageandName{
+
+  display: flex;
+  align-items: center;
+
+}
+
+
+.name{
+
+  padding-left: 1.2em;
+  font-size: 1.2em;
+  letter-spacing: 0.175em;
+
+}
+
+.menuLinkContent{
+
+  padding-left: 1.2em;
+  font-weight: 800;
+}
+.rightNav{
+  display: flex;
+  align-items: center;
+
+
+}
+.divider{
+padding-left: 1.2em;
+  //padding-top: 3em;
+}
+
+.afterDivider{
+  padding-left: 1em;
+  display: flex;
+  align-items: center;
+
+}
+
+.icons{
+
+  margin-left: 1.5em;
+}
