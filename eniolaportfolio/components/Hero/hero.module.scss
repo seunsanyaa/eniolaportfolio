@@ -3,8 +3,18 @@
 font-family: 'Okta Bold';
 }
 
+
+@media (min-width: 1200px) and (max-width: 1399px){
+  .container{
+
+
+    padding: 6em 2em !important;
+  }
+
+}
 .container{
   padding: 8em 2em;
+
 
 }
 .hithere{

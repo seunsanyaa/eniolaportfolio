@@ -30,7 +30,7 @@ export default function Home() {
             <div>
             <i className={styles.italic}>Developed by </i>
 
-            <a href='https://www.linkedin.com/in/oluwaseun-sanyaolu-3a4404205/'  target="_blank" className={styles.seun}> &nbsp;Oluwaseun Sanyaolu</a>
+            <a href='https://www.linkedin.com/in/oluwaseun-sanyaolu-3a4404205/' rel="noreferrer"  target="_blank" className={styles.seun}> &nbsp;Oluwaseun Sanyaolu</a>
             </div>
         </footer>
     </div>
