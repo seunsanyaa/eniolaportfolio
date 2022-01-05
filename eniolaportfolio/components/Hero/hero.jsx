@@ -32,7 +32,7 @@ export default function Hero( ) {
 
                </div>
 
-            <img src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641308852/Vector_52_drcnnn.png"/>
+            <img className={herostyles.longline} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641308852/Vector_52_drcnnn.png"/>
 
         </div>
     )

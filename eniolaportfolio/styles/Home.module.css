@@ -1,8 +1,21 @@
-.container {
-  padding: 0 5em;
-  font-family: Okta;
+@media (min-width: 1440px) {
+  .container{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
+
+
+.container {
+  padding: 0 8.5em;
+  font-family: Okta;
+}
+.longline {
+  width: 100%;
+
+  padding-top: 3.5em;
+}
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -12,22 +25,23 @@
   justify-content: center;
   align-items: center;
 }
-
+.italic{
+  font-weight: 400;
+  font-family: Okta;
+}
+.seun{
+  font-family: "Okta Bold";
+}
 .footer {
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+
   justify-content: center;
   align-items: center;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
+
 
 .title a {
   color: #0070f3;

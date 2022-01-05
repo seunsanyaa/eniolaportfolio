@@ -1,0 +1,95 @@
+
+
+.headerContainer{
+  text-align: center;
+  padding:0 15em;
+
+
+}
+
+.header{
+
+  font-size: 1.5em;
+  line-height: 52px;
+  margin: unset;
+}
+
+
+.headerParagraph{
+
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 33px;
+  margin: unset;
+}
+
+
+.projectcontainer{
+
+  padding-top: 5em;
+
+
+}
+
+.bundleImage{
+  width: 100%;
+
+
+}
+
+.casestudy{
+margin: unset;
+  border-bottom: 2px solid #535353;
+width:5em;
+  padding-bottom:0.2em;
+  font-size: 1em;
+  font-weight: 400;
+
+}
+
+//.underline{
+//  text-decoration-color: #fafafa ;
+//margin-top: 10em;
+//}
+
+.bundle{
+  padding-top: 3em;
+}
+
+.aboutProject{
+
+display: grid;
+  margin: unset;
+  padding-top: 0.5em;
+
+}
+
+.projectName{
+  font-family: "Okta Bold";
+  font-size: 1.5em;
+  font-weight: 800;
+  margin:unset;
+}
+
+.casestudyparagraph{
+  font-size: 1.2em;
+  padding-top: 0.2em;
+}
+
+.longline{
+  width: 100%;
+
+  padding-top: 4em;
+}
+
+.projectGrid{
+  display: grid;
+  grid-template-columns: 2fr 0.05fr 2fr;
+  padding-bottom: 6em;
+}
+
+.casestudyparagraphblacklist{
+  font-size: 1.2em;
+  padding-top: 0.2em;
+  padding-right: 7em;
+}

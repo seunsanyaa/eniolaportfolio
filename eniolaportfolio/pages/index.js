@@ -3,6 +3,9 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import NavBar from "../components/Navbar/navbar";
 import Hero from "../components/Hero/hero";
+import RecentProjects from "../components/RecentProjects/recentprojects";
+import WriteEmail from "../components/WriteEmail/writeemail";
+import emailstyles from "../components/WriteEmail/writeemail.module.scss";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -16,7 +19,20 @@ export default function Home() {
 
         <Hero/>
 
+        <RecentProjects/>
 
+<WriteEmail/>
+
+        <img className={styles.longline} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641308852/Vector_52_drcnnn.png"/>
+
+
+        <footer className={styles.footer}>
+            <div>
+            <i className={styles.italic}>Developed by </i>
+
+            <a href='https://www.linkedin.com/in/oluwaseun-sanyaolu-3a4404205/'  target="_blank" className={styles.seun}> &nbsp;Oluwaseun Sanyaolu</a>
+            </div>
+        </footer>
     </div>
   )
 }
