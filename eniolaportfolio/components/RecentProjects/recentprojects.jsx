@@ -29,6 +29,7 @@ export default function RecentProjects( ) {
 
 
     <div className={recentprojectstyles.projectcontainer}>
+        <a href='/'>
         <img className={recentprojectstyles.bundleImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641389863/Slide_16_9_-_5_1_czhtud.png"/>
 
 
@@ -47,9 +48,13 @@ export default function RecentProjects( ) {
 
         <img className={recentprojectstyles.longline} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641308852/Vector_52_drcnnn.png"/>
 
+
+        </a>
     </div>
 
     <div className={recentprojectstyles.projectcontainer}>
+
+        <a href='https://www.behance.net/gallery/118783147/Cashpay-App-Presentation'>
         <img className={recentprojectstyles.bundleImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641396770/Frame_1_1_yqditk.png"/>
 
 
@@ -67,12 +72,14 @@ export default function RecentProjects( ) {
         </div>
 
         <img className={recentprojectstyles.longline} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641308852/Vector_52_drcnnn.png"/>
-
+        </a>
     </div>
 
 
     <div className={recentprojectstyles.projectGrid}>
         <div className={recentprojectstyles.projectcontainer}>
+            <a href='https://www.aladdin.ng/'>
+
             <img className={recentprojectstyles.bundleImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641397628/Macbook_Pro_-_Light_Background_1_fnm9ur.png"/>
 
 
@@ -89,11 +96,13 @@ export default function RecentProjects( ) {
 
             </div>
 
-
+            </a>
         </div>
 
         <div></div>
         <div className={recentprojectstyles.projectcontainer}>
+
+            <a href='https://blacklistng.com/'>
             <img className={recentprojectstyles.bundleImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641397678/Macbook_Pro_-_Light_Background_3_lw1vgy.png"/>
 
 
@@ -110,7 +119,7 @@ export default function RecentProjects( ) {
 
             </div>
 
-
+            </a>
         </div>
     </div>
 

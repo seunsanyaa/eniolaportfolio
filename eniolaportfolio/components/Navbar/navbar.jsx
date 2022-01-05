@@ -5,8 +5,10 @@ import styles from '../../styles/Home.module.css'
 import navstyles from './navbar.module.scss'
 
 
-
-import {useState} from "react";
+const linkedIn  =  <img className={navstyles.icons} width={32} src='https://res.cloudinary.com/seunsanyaa/image/upload/v1641305857/Group_52_z48o2r.png'/>
+const Instagram =  <img className={navstyles.icons} width={32} src='https://res.cloudinary.com/seunsanyaa/image/upload/v1641306171/instagram_wwwqqe.png'/>
+const Behance= <img className={navstyles.icons} width={32} src='https://res.cloudinary.com/seunsanyaa/image/upload/v1641306324/Group_51_mv43jn.png'/>
+const Dribble = <img className={navstyles.icons} width={32} src='https://res.cloudinary.com/seunsanyaa/image/upload/v1641306376/dribbble_ggl4fv.png'/>
 
 
 export default function NavBar( ) {
@@ -44,7 +46,7 @@ export default function NavBar( ) {
                         </Link>
 
 
-                        <Link href="/" >
+                        <Link href="/" className={navstyles.link}>
 
                             <a className={navstyles.menuLinkContent} >  Contact me </a>
 
@@ -58,17 +60,26 @@ export default function NavBar( ) {
                     <div className={navstyles.afterDivider}>
 
 
-                            <img className={navstyles.icons} width={32} src='https://res.cloudinary.com/seunsanyaa/image/upload/v1641305857/Group_52_z48o2r.png'/>
+                        <Link href='https://www.linkedin.com/in/eniolaajibode/' className={navstyles.link}>
+<a> {linkedIn} </a>
+
+                        </Link>
 
 
+                        <Link href='https://www.instagram.com/ui.eniola/' className={navstyles.link}>
+                            <a> {Instagram} </a>
 
+                        </Link>
+   <Link href='https://www.behance.net/eniolaajibode1' className={navstyles.link}>
+                            <a> {Behance} </a>
 
+                        </Link>
+                        <Link href='https://dribbble.com/Ajibode' className={navstyles.link}>
+                            <a> {Dribble} </a>
 
+                        </Link>
 
                             {/*<a className={navstyles.menuLinkContent} >  Contact me </a>*/}
-                            <img className={navstyles.icons} width={32} src='https://res.cloudinary.com/seunsanyaa/image/upload/v1641306171/instagram_wwwqqe.png'/>
-                            <img className={navstyles.icons} width={32} src='https://res.cloudinary.com/seunsanyaa/image/upload/v1641306324/Group_51_mv43jn.png'/>
-                            <img className={navstyles.icons} width={32} src='https://res.cloudinary.com/seunsanyaa/image/upload/v1641306376/dribbble_ggl4fv.png'/>
 
 
 

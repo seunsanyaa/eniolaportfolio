@@ -53,10 +53,19 @@ padding-left: 1.2em;
   padding-left: 1em;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding-top: 0.4em;
 
 }
 
 .icons{
 
   margin-left: 1.5em;
+}
+
+.link{
+
+  cursor: pointer;
+  text-decoration: unset;
+  align-items: center;
 }

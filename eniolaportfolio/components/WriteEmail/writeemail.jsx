@@ -26,9 +26,13 @@ export default function WriteEmail( ) {
            I am available to work on your projects and bring your ideas to life. I am just a click away.
        </p>
 
-       <button className={emailstyles.button}>
+       <a href="mailto:eni.ajibode@gmail.com">
+
+       <button className={emailstyles.button} >
+
            Write an Email
        </button>
+       </a>
 
    </div>
     )
