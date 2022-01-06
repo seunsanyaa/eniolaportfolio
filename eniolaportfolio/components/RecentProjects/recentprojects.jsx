@@ -31,7 +31,7 @@ export default function RecentProjects( ) {
     <div className={recentprojectstyles.projectcontainer}>
         <a >
         <img className={recentprojectstyles.bundleImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641389863/Slide_16_9_-_5_1_czhtud.png"/>
-
+<img className={recentprojectstyles.bundleImageMobile} src='https://res.cloudinary.com/seunsanyaa/image/upload/v1641483402/Instagram_post_-_3_nbb5jn.png'/>
 
         <div className={recentprojectstyles.bundle}>
 
@@ -56,6 +56,7 @@ export default function RecentProjects( ) {
 
         <a href='https://www.behance.net/gallery/118783147/Cashpay-App-Presentation'>
         <img className={recentprojectstyles.bundleImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641396770/Frame_1_1_yqditk.png"/>
+        <img className={recentprojectstyles.bundleImageMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641486251/Instagram_post_-_1_hwoyns.png"/>
 
 
         <div className={recentprojectstyles.bundle}>
@@ -81,6 +82,7 @@ export default function RecentProjects( ) {
             <a href='https://www.aladdin.ng/'>
 
             <img className={recentprojectstyles.bundleImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641397628/Macbook_Pro_-_Light_Background_1_fnm9ur.png"/>
+            <img className={recentprojectstyles.bundleImageMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641486534/Instagram_post_-_1_2_bcjjml.png"/>
 
 
             <div className={recentprojectstyles.bundle}>
@@ -104,6 +106,7 @@ export default function RecentProjects( ) {
 
             <a href='https://blacklistng.com/'>
             <img className={recentprojectstyles.bundleImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641397678/Macbook_Pro_-_Light_Background_3_lw1vgy.png"/>
+            <img className={recentprojectstyles.bundleImageMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641486517/Instagram_post_-_1_1_pv72ei.png"/>
 
 
             <div className={recentprojectstyles.bundle}>

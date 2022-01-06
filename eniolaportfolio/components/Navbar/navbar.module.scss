@@ -4,7 +4,14 @@
 }
 
 
+@media (min-width: 425px) and (max-width: 767px) {
 
+  .rightNav{
+    display: none !important;
+
+
+  }
+}
 .nav{
 font-family: Okta;
   padding-top: 1em;
