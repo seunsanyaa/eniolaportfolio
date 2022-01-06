@@ -29,7 +29,7 @@ export default function RecentProjects( ) {
 
 
     <div className={recentprojectstyles.projectcontainer}>
-        <a href='/'>
+        <a >
         <img className={recentprojectstyles.bundleImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641389863/Slide_16_9_-_5_1_czhtud.png"/>
 
 
