@@ -1,3 +1,53 @@
+@media (min-width: 375px) and (max-width: 424px) {
+  .headerContainer{
+
+    padding:0 0.1em !important;
+
+
+  }
+
+
+  .casestudyparagraphblacklist{
+
+    padding-right: 0em !important;
+    font-size: 1em !important;
+  }
+  .headerParagraph{
+
+    font-size: 0.9em !important;
+
+  }
+
+
+
+  .casestudyparagraph{
+    font-size: 1em !important;
+    //padding-top: 0.2em;
+  }
+
+
+  .projectName{
+
+    font-size: 1.4em !important;
+
+  }
+  .bundleImageMobile{
+    display: grid !important;
+width: 100%;
+  }
+
+  .bundleImage{
+  display: none;
+
+
+  }
+
+  .projectGrid{
+    display: block !important;
+
+    padding-bottom: 6em !important;
+  }
+}
 @media (min-width: 425px) and (max-width: 767px) {
   .headerContainer{
 

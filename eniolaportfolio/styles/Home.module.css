@@ -1,3 +1,12 @@
+@media (min-width: 375px) and (max-width: 424px) {
+  .container{
+    /*max-width: 1440px;*/
+    margin: 0 auto;
+
+    padding: 0 1.1em !important;
+  }
+
+}
 
 @media (min-width: 425px) and (max-width: 767px) {
   .container{

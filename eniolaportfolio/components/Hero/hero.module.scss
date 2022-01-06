@@ -2,6 +2,37 @@
   src: url("https://res.cloudinary.com/seunsanyaa/raw/upload/v1638778653/OktaNeue-SemiBold_pttfou.ttf");
 font-family: 'Okta Bold';
 }
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .container{
+
+    padding-bottom: 0em !important;
+    padding-top: 8em !important;
+
+    padding-right: 0em !important;
+    padding-left: 0em !important;
+  }
+  .hithere{
+
+
+    font-size: 1em !important;
+  }
+  .aboutMe{
+
+    font-size: 1.6em !important;
+    padding-right: 0.5em;
+
+  }
+
+
+  .scrolltrigger{
+
+
+    font-size: 0.8em !important;
+
+  }
+
+}
 @media (min-width: 425px) and (max-width: 767px) {
   .container{
 
