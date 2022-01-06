@@ -46,7 +46,7 @@ export default function NavBar( ) {
                         </Link>
 
 
-                        <Link href="/" className={navstyles.link}>
+                        <Link href="mailto:eni.ajibode@gmail.com" className={navstyles.link}>
 
                             <a className={navstyles.menuLinkContent} >  Contact me </a>
 

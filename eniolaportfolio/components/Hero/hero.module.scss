@@ -2,7 +2,20 @@
   src: url("https://res.cloudinary.com/seunsanyaa/raw/upload/v1638778653/OktaNeue-SemiBold_pttfou.ttf");
 font-family: 'Okta Bold';
 }
+@media (min-width: 1024px) and (max-width: 1199px){
+  .container{
 
+
+    padding: 5.3em 4em !important;
+  }
+
+  .aboutMe{
+
+    font-size: 2.1em !important;
+
+  }
+
+}
 
 @media (min-width: 1200px) and (max-width: 1399px){
   .container{
