@@ -54,7 +54,7 @@ const StyledModalHeader = styled.div`
 const StyledModal = styled.div`
   background: black;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   border-radius: 15px;
 
 `;
@@ -63,7 +63,7 @@ const StyledModalOverlay = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 500%;
   display: flex;
   justify-content: center;
   align-items: center;

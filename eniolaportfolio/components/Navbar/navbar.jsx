@@ -113,6 +113,9 @@ export default function NavBar( ) {
                                     </div>
                                 </div>
                             </div>
+                            <div className={navstylemobile.navstop}>
+
+                            </div>
                         </Modal>
                     </div>
 
