@@ -1,0 +1,44 @@
+
+.nav{
+  font-family: Okta;
+  padding-top: 1em;
+  padding-bottom: 3.5em;
+
+  border-bottom: 0.2px solid #FFFFFF;
+
+
+}
+.NavbarContainer{
+  //display: block;
+  text-align: center;
+
+}
+
+.resumeAndContact{
+  padding-top: 9em;
+}
+.resumeAndContact>*{
+display: block;
+}
+
+.menuLinkContent{
+  font-family: "Okta Bold";
+  font-size: 1.7em;
+
+  padding-top: 2em;
+}
+
+.socials{
+  padding-top: 12em;
+  justify-content: space-evenly;
+}
+
+.link{
+  padding-left: 1.5em !important;
+}
+
+.cancel{
+margin-left: 80%;
+  background: unset;
+  border: none;
+}
