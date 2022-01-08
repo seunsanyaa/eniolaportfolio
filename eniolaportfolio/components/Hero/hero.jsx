@@ -5,11 +5,13 @@ import Link from 'next/link'
 // import navstyles from './navbar.module.scss'
 import herostyles from './hero.module.scss'
 
+
 import {useEffect, useRef, useState} from "react";
 import {TimelineMax, gsap } from 'gsap'
 import CustomEase from 'gsap/dist/CustomEase'
 import  TextPlugin  from "gsap/dist/TextPlugin";
 gsap.registerPlugin(CustomEase,TextPlugin)
+
 export default function Hero( ) {
     let el = useRef();
 
@@ -33,7 +35,7 @@ export default function Hero( ) {
            [ul.current],
             {text:
                     {value: "I am a UI/UX Designer based in Lagos, Nigeria. I am focused on creating User-centric digital products and meaningful experiences."},
-                duration: 10,
+                duration: 3,
                 delay: 1, ease: "none"});
 
     },[]);
@@ -49,7 +51,7 @@ export default function Hero( ) {
            {/*I am a UI/UX Designer based in Lagos, Nigeria. I am focused on creating User-centric digital products and meaningful experiences.*/}
 
         </span>
-            <span id="cursor" ref={el} className={herostyles.aboutMeCursor} >|</span>
+            <span id="cursor" ref={el} className={herostyles.aboutMeCursor} ></span>
 
 
             <div className={herostyles.scrolltrigger}>
