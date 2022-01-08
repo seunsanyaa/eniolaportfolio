@@ -35,7 +35,7 @@ export default function Hero( ) {
            [ul.current],
             {text:
                     {value: "I am a UI/UX Designer based in Lagos, Nigeria. I am focused on creating User-centric digital products and meaningful experiences."},
-                duration: 3,
+                duration: 2.5,
                 delay: 1, ease: "none"});
 
     },[]);
