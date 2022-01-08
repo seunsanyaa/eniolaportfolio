@@ -3,8 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../../styles/Home.module.css'
 import navstyles from './navbar.module.scss'
-import {useState} from "react";
+import {useEffect, useRef, useState} from "react";
+import { gsap } from 'gsap'
 import NavBarModal from "./mobilemodal";
+
 import Modal from "./modal";
 import navstylemobile from "./navbarmobile.module.scss";
 const linkedIn  =  <img className={navstyles.icons} width={32} src='https://res.cloudinary.com/seunsanyaa/image/upload/v1641305857/Group_52_z48o2r.png'/>
@@ -14,10 +16,27 @@ const Dribble = <img className={navstyles.icons} width={32} src='https://res.clo
 
 
 export default function NavBar( ) {
+
+    let el = useRef();
+    let q = gsap.utils.selector(el);
+    const tl = useRef();
+    useEffect(() => {
+        // uses el.current.querySelectorAll() internally
+
+        tl.current = gsap.timeline()
+            .from([el.current], {
+                y:25,
+                autoAlpha:0
+            })
+            // .to(q(".circle"), {
+            //     x: 100
+            // });
+    },[]);
+
     const [showModal, setShowModal] = useState(false);
     return (
 
-        <div className={navstyles.nav}>
+        <div className={navstyles.nav} ref={el}>
 
             <div className={styles}>
 

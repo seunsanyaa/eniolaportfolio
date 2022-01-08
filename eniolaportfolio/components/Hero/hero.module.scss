@@ -128,12 +128,21 @@ margin: unset;
 }
 
 .aboutMe{
+  color: #fff;
+  position: relative;
+  margin: 0;
   padding-top: 0.4em;
   font-weight: 600;
   font-size: 3em;
   line-height: 146%;
   font-family: "Okta Bold";
-  margin: unset;
+  //margin: unset;
+}
+.aboutMeCursor{
+  margin: 0;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 3em;
 }
 
 .scrolltrigger{
@@ -154,3 +163,5 @@ margin: unset;
 width: 100%;
 
 }
+
+
