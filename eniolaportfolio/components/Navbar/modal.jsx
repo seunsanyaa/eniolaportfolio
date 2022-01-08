@@ -56,6 +56,7 @@ const StyledModal = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 15px;
+  position:fixed
 
 `;
 const StyledModalOverlay = styled.div`
@@ -63,7 +64,7 @@ const StyledModalOverlay = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 500%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

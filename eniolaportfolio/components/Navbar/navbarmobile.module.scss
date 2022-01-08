@@ -15,7 +15,7 @@
 }
 
 .resumeAndContact{
-  padding-top: 9em;
+  padding-top: 6em;
 }
 .resumeAndContact>*{
 display: block;
@@ -29,7 +29,7 @@ display: block;
 }
 
 .socials{
-  padding-top: 12em;
+  padding-top: 6em;
   justify-content: space-evenly;
 }
 
@@ -45,4 +45,6 @@ margin-left: 80%;
 
 .navstop{
  overflow: unset;
+  position: fixed;
+  overflow-y: unset;
 }
