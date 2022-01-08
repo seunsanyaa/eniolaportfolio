@@ -26,7 +26,8 @@ export default function NavBar( ) {
         tl.current = gsap.timeline()
             .from([el.current], {
                 y:25,
-                autoAlpha:0
+                autoAlpha:0,
+
             })
             // .to(q(".circle"), {
             //     x: 100

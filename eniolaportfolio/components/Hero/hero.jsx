@@ -14,29 +14,38 @@ gsap.registerPlugin(CustomEase,TextPlugin)
 
 export default function Hero( ) {
     let el = useRef();
-
     let ul = useRef();
-    // let q = gsap.utils.selector(el);
-    // const tl = useRef();
-    useEffect(() => {
+    let hi = useRef();
 
-      // let tl = new TimelineMax({
-      //       paused:true
-      //   });
+    useEffect(() => {
+        gsap.fromTo([hi.current],
+        {autoAlpha: 0, duration:3, delay: 0.7},
+            {autoAlpha:1,duration:0.5,delay:0.7},0
+
+
+
+
+
+
+        );
 
         gsap.fromTo([el.current],
-            {autoAlpha: 0, x: -20},
+            {autoAlpha: 0, x: -20 , delay: 10},
             {autoAlpha: 1,
                 duration: 0.5, repeat: -1, /* same as CSS .line-1 width */
             ease:  CustomEase.create("custom", "M0,0,C0,0,0.45,-0.088,0.495,0,0.584,0.179,0.409,0.82,0.5,1,0.545,1.089,1,1,1,1")
-        }, 0);
+
+            }, 0);
 
        let tween = gsap.to(
            [ul.current],
             {text:
                     {value: "I am a UI/UX Designer based in Lagos, Nigeria. I am focused on creating User-centric digital products and meaningful experiences."},
                 duration: 3,
-                delay: 1, ease: "none"});
+                delay: 10,
+                ease: "none",
+
+            });
 
     },[]);
     return (
@@ -45,7 +54,11 @@ export default function Hero( ) {
 
         <div className={herostyles.container}>
 
-            <h3 className={herostyles.hithere}>Hi There! I’m Eniola <span className={herostyles.smiley}> <img width={27} src="data:image/svg+xml,%3Csvg width='32' height='17' viewBox='0 0 32 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M30.5383 2.18049C24.4845 13.4374 12.3915 18.0139 1.15965 11.6766C0.785735 11.4655 0.311577 11.5975 0.100552 11.9668C-0.110473 12.3426 0.0214315 12.8174 0.395341 13.0285C12.4343 19.8274 25.4183 14.9805 31.9073 2.91908C32.1104 2.54319 31.9686 2.06832 31.5908 1.86389C31.2129 1.66605 30.7414 1.8046 30.5383 2.18049Z' fill='%23F9C136'/%3E%3Cpath d='M10.6119 6.84829C11.8624 6.84829 12.8762 5.83457 12.8762 4.58406C12.8762 3.33355 11.8624 2.31982 10.6119 2.31982C9.36138 2.31982 8.34766 3.33355 8.34766 4.58406C8.34766 5.83457 9.36138 6.84829 10.6119 6.84829Z' fill='%23F9C136'/%3E%3Cpath d='M19.9846 4.43996C21.2107 4.43996 22.2047 3.44605 22.2047 2.21998C22.2047 0.993911 21.2107 0 19.9846 0C18.7586 0 17.7646 0.993911 17.7646 2.21998C17.7646 3.44605 18.7586 4.43996 19.9846 4.43996Z' fill='%23F9C136'/%3E%3C/svg%3E%0A"/></span></h3>
+            <h3 ref={hi} className={herostyles.hithere}>Hi There! I’m Eniola
+                <span className={herostyles.smiley}>
+                    <img width={27} src="data:image/svg+xml,%3Csvg width='32' height='16' viewBox='0 0 32 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M30.5383 1.18049C24.4845 12.4374 12.3915 17.0139 1.15965 10.6766C0.785735 10.4655 0.311577 10.5975 0.100552 10.9668C-0.110473 11.3426 0.0214315 11.8174 0.395341 12.0285C12.4343 18.8274 25.4183 13.9805 31.9073 1.91908C32.1104 1.54319 31.9686 1.06832 31.5908 0.863887C31.2129 0.666051 30.7414 0.804604 30.5383 1.18049Z' fill='%23F9C136'/%3E%3C/svg%3E%0A"/>
+                </span>
+            </h3>
 
         <span className={herostyles.aboutMe}  ref={ul}>
            {/*I am a UI/UX Designer based in Lagos, Nigeria. I am focused on creating User-centric digital products and meaningful experiences.*/}
