@@ -2,6 +2,33 @@
   font-family: 'Okta';
   src: url('https://res.cloudinary.com/seunsanyaa/raw/upload/v1638778212/Groteskly_Yours_-_Okta_Neue_UltraLight_hlnfue.otf') ;
 }
+
+@media (min-width: 320px) and (max-width: 374px) {
+
+  .rightNav{
+    display: none !important;
+
+
+  }
+
+
+  .name{
+
+
+    font-size: 1.1em !important;
+    padding-left: 0.7em !important;
+
+  }
+  .menuMobile{
+    display: grid !important;
+    background: none;
+    border: unset;
+  }
+  .profileImage{
+    width: 2.7em !important;
+    height: 2.7em !important;
+  }
+}
 @media (min-width: 375px) and (max-width: 424px) {
 
   .rightNav{
