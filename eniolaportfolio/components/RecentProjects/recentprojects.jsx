@@ -21,13 +21,26 @@ let cov = useRef();
     useEffect(() => {
 
 
-        gsap.from([head.current], {
-            scrollTrigger:[head.current] ,
-            y:30,
-            autoAlpha:0,
-            duration:0.8
+        // gsap.from([head.current],
+        //     {
+        //     scrollTrigger:[head.current] ,
+        //     y:30,
+        //     autoAlpha:0,
+        //     duration:0.8
+        //
+        // });
 
-        });
+
+        gsap.fromTo([head.current],
+            {
+                scrollTrigger:[head.current] ,
+                y:30,
+                autoAlpha:0,
+                duration:0.8
+            },
+            {autoAlpha:1},0
+        );
+
 
         //
         //slide left pending
@@ -47,13 +60,25 @@ let cov = useRef();
         //     1, { opacity: 0 },
         //     "reveal");
 
-        gsap.from([image.current], {
-            scrollTrigger:[head.current] ,
+        // gsap.from([image.current], {
+        //     scrollTrigger:[head.current] ,
+        //
+        //     autoAlpha:0,
+        //     duration:0.8
+        //
+        // });
 
-            autoAlpha:0,
-            duration:0.8
 
-        });
+        gsap.fromTo([image.current],
+            {
+                scrollTrigger:[head.current] ,
+
+                autoAlpha:0,
+                duration:0.8
+            },
+            {autoAlpha:1},0
+        );
+
         // gsap.fromTo([image.current],
         //     {autoAlpha: 0, duration:3, delay: 3.95},
         //     {autoAlpha:1,duration:0.5,delay:3.95},0
