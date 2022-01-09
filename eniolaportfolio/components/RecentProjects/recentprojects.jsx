@@ -25,8 +25,7 @@ let cov = useRef();
             scrollTrigger:[proj.current] ,
             y:30,
             autoAlpha:0,
-            duration:0.8,
-            delay:2
+            duration:0.8
 
         });
 
@@ -52,8 +51,7 @@ let cov = useRef();
             scrollTrigger:[proj.current] ,
 
             autoAlpha:0,
-            duration:0.8,
-            delay:2
+            duration:0.8
 
         });
         // gsap.fromTo([image.current],
