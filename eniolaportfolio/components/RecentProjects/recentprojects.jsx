@@ -26,7 +26,7 @@ let cov = useRef();
             y:30,
             autoAlpha:0,
             duration:0.8,
-            delay:4.2
+            delay:2
 
         });
 
@@ -53,7 +53,7 @@ let cov = useRef();
 
             autoAlpha:0,
             duration:0.8,
-            delay:4
+            delay:2
 
         });
         // gsap.fromTo([image.current],
