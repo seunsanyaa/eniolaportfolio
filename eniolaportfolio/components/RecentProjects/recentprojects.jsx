@@ -22,7 +22,7 @@ let cov = useRef();
 
 
         gsap.from([head.current], {
-            scrollTrigger:[proj.current] ,
+            scrollTrigger:[head.current] ,
             y:30,
             autoAlpha:0,
             duration:0.8
@@ -48,7 +48,7 @@ let cov = useRef();
         //     "reveal");
 
         gsap.from([image.current], {
-            scrollTrigger:[proj.current] ,
+            scrollTrigger:[head.current] ,
 
             autoAlpha:0,
             duration:0.8
