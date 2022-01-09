@@ -4,18 +4,45 @@ import styles from '../../styles/Home.module.css'
 
 
 import recentprojectstyles from './recentprojects.module.scss'
-import {useState} from "react";
+
 import herostyles from "../Hero/hero.module.scss";
+import {useEffect, useRef, useState} from "react";
+import {TimelineMax, gsap } from 'gsap'
+import  ScrollTrigger  from "gsap/dist/ScrollTrigger";
 
-
+gsap.registerPlugin(ScrollTrigger);
 export default function RecentProjects( ) {
+let head = useRef();
+let proj= useRef();
+
+
+    useEffect(() => {
+
+
+        gsap.from([head.current], {
+            scrollTrigger:[proj.current] ,
+            y:30,
+            autoAlpha:0,
+            duration:0.8,
+            delay:5
+
+        });
+
+        //
+
+
+
+
+
+
+    },[]);
 
     return (
 
 
 <div className={recentprojectstyles.container}>
 
-<div className={recentprojectstyles.headerContainer}>
+<div className={recentprojectstyles.headerContainer} ref={head}>
     <h3 className={recentprojectstyles.header}>
         My Recents Projects
     </h3>
@@ -28,7 +55,7 @@ export default function RecentProjects( ) {
 
 
 
-    <div className={recentprojectstyles.projectcontainer}>
+    <div className={recentprojectstyles.projectcontainer}  ref={proj}>
         <a >
         <img className={recentprojectstyles.bundleImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641389863/Slide_16_9_-_5_1_czhtud.png"/>
 <img className={recentprojectstyles.bundleImageMobile} src='https://res.cloudinary.com/seunsanyaa/image/upload/v1641490173/Instagram_post_-_3_egdqh5.png'/>
