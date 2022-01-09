@@ -10,15 +10,43 @@ import {useEffect, useRef, useState} from "react";
 import {TimelineMax, gsap } from 'gsap'
 import CustomEase from 'gsap/dist/CustomEase'
 import  TextPlugin  from "gsap/dist/TextPlugin";
+import ImagePlugin from "gsap/dist/PixiPlugin"
 gsap.registerPlugin(CustomEase,TextPlugin)
 
+
+const heroline = <img src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641308852/Vector_52_drcnnn.png"/>
 export default function Hero( ) {
     let el = useRef();
     let ul = useRef();
     let hi = useRef();
-    let scrollButton = useRef()
+    let scrollButton = useRef();
+    let line = useRef();
+    let lineCursor = useRef()
 
     useEffect(() => {
+
+
+        //
+        // gsap.from([line.current], 0.8, {
+        //
+        //     opacity: 0 ,
+        //
+        //     duration:10,
+        // });
+        //
+
+
+
+        // gsap.to([line.current], 1, {
+        //
+        //     scaleX: 0,
+        //     transformOrigin: "right",
+        //     duration:20,
+        // }, "reveal");
+
+
+
+
 
         gsap.fromTo([hi.current],
         {autoAlpha: 0, duration:3, delay: 0.7},
@@ -49,6 +77,33 @@ export default function Hero( ) {
             {autoAlpha:1,duration:0.5,delay:3.95},0
         );
 
+        gsap.from([line.current], 1, {
+
+            scaleX: 0,
+            transformOrigin: "left",
+            duration:50,
+            delay:4
+        });
+
+
+        // gsap.fromTo([lineCursor.current],
+        //     {autoAlpha: 0, x: -20 , delay: 10},
+        //     {autoAlpha: 1,
+        //         duration: 0.5, repeat: -1, /* same as CSS .line-1 width */
+        //         ease:  CustomEase.create("custom", "M0,0,C0,0,0.45,-0.088,0.495,0,0.584,0.179,0.409,0.82,0.5,1,0.545,1.089,1,1,1,1")
+        //
+        //     }, 0);
+
+         // gsap.to(
+         //    [line.current],
+         //    {image:
+         //            {value:heroline},
+         //        duration: 3,
+         //        delay: 1,
+         //        ease: "none",
+         //
+         //    });
+
 
 
     },[]);
@@ -72,8 +127,10 @@ export default function Hero( ) {
 
                </div>
 
-            <img className={herostyles.longline} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641308852/Vector_52_drcnnn.png"/>
 
+                  <img ref={line} className={herostyles.longline} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641308852/Vector_52_drcnnn.png"/>
+
+            {/*<div ref={lineCursor} className={herostyles.cover1}></div>*/}
         </div>
     )
 }
