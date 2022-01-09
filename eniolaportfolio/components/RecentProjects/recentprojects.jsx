@@ -14,8 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function RecentProjects( ) {
 let head = useRef();
 let proj= useRef();
-let image = useRef();
-let cov = useRef();
+
 
 
     useEffect(() => {
@@ -38,7 +37,7 @@ let cov = useRef();
                 autoAlpha:0,
                 duration:0.8
             },
-            {autoAlpha:1},0
+            {autoAlpha:1}
         );
 
 
@@ -69,14 +68,14 @@ let cov = useRef();
         // });
 
 
-        gsap.fromTo([image.current],
+        gsap.fromTo([proj.current],
             {
                 scrollTrigger:[head.current] ,
 
                 autoAlpha:0,
                 duration:0.8
             },
-            {autoAlpha:1},0
+            {autoAlpha:1}
         );
 
         // gsap.fromTo([image.current],
@@ -106,10 +105,8 @@ let cov = useRef();
 
     <div className={recentprojectstyles.projectcontainer}  ref={proj}>
         <a href="https://medium.com/@eni.ajibode/bundle-africa-learn-a-case-study-of-a-conceptual-feature-dfd513dd6b54" >
-            {/*<div className="wrapper">*/}
-        <img ref={image} className={recentprojectstyles.bundleImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641389863/Slide_16_9_-_5_1_czhtud.png"/>
-            {/*<div className="cover" ref={cov}></div>*/}
-            {/*</div>*/}
+
+        <img  className={recentprojectstyles.bundleImage} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641389863/Slide_16_9_-_5_1_czhtud.png"/>
                 <img className={recentprojectstyles.bundleImageMobile} src='https://res.cloudinary.com/seunsanyaa/image/upload/v1641490173/Instagram_post_-_3_egdqh5.png'/>
 
         <div className={recentprojectstyles.bundle}>
