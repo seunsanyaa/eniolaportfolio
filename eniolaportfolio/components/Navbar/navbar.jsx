@@ -20,6 +20,9 @@ export default function NavBar( ) {
     let el = useRef();
     let q = gsap.utils.selector(el);
     const tl = useRef();
+
+
+
     useEffect(() => {
         // uses el.current.querySelectorAll() internally
 
@@ -29,6 +32,8 @@ export default function NavBar( ) {
                 autoAlpha:0,
 
             })
+
+
             // .to(q(".circle"), {
             //     x: 100
             // });
@@ -82,7 +87,7 @@ export default function NavBar( ) {
 
 
 
-                                            <Link href="/" >
+                                            <Link href="https://drive.google.com/file/d/1sn_Hl0AWNGkbLv7Ws1wLzMpWzAZg7ICV/view?usp=sharing" >
 
                                                 <a className={navstylemobile.menuLinkContent} >  Resume  </a>
 
@@ -146,9 +151,9 @@ export default function NavBar( ) {
 
 
 
-                        <Link href="/" >
+                        <Link href="https://drive.google.com/file/d/1sn_Hl0AWNGkbLv7Ws1wLzMpWzAZg7ICV/view?usp=sharing">
 
-                            <a className={navstyles.menuLinkContent} >  Resume  </a>
+                            <a  className={navstyles.menuLinkContent} >  Resume  </a>
 
 
                         </Link>
