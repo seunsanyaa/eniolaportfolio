@@ -16,6 +16,7 @@ export default function Hero( ) {
     let el = useRef();
     let ul = useRef();
     let hi = useRef();
+    let scrollButton = useRef()
 
     useEffect(() => {
 
@@ -43,6 +44,11 @@ export default function Hero( ) {
             });
 
 
+        gsap.fromTo([scrollButton.current],
+            {autoAlpha: 0, duration:3, delay: 3.95},
+            {autoAlpha:1,duration:0.5,delay:3.95},0
+        );
+
 
 
     },[]);
@@ -59,7 +65,7 @@ export default function Hero( ) {
             <span id="cursor" ref={el} className={herostyles.aboutMeCursor} ></span>
 
 
-            <div className={herostyles.scrolltrigger}>
+            <div className={herostyles.scrolltrigger} ref={scrollButton}>
 
                 Scroll to see my selected projects
                <img className={herostyles.arrow} src="data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.00031 12.3958C6.88948 12.3958 6.77865 12.355 6.69115 12.2675L3.15031 8.72665C2.98115 8.55749 2.98115 8.27749 3.15031 8.10832C3.31948 7.93915 3.59948 7.93915 3.76865 8.10832L7.00031 11.34L10.232 8.10832C10.4011 7.93915 10.6811 7.93915 10.8503 8.10832C11.0195 8.27749 11.0195 8.55749 10.8503 8.72665L7.30948 12.2675C7.22198 12.355 7.11115 12.3958 7.00031 12.3958Z' fill='white'/%3E%3Cpath d='M7 12.2966C6.76083 12.2966 6.5625 12.0983 6.5625 11.8591V2.04163C6.5625 1.80246 6.76083 1.60413 7 1.60413C7.23917 1.60413 7.4375 1.80246 7.4375 2.04163V11.8591C7.4375 12.0983 7.23917 12.2966 7 12.2966Z' fill='white'/%3E%3C/svg%3E%0A"/>
