@@ -30,15 +30,15 @@ let proj= useRef();
         // });
 
 
-        gsap.fromTo([head.current],
-            {
-                scrollTrigger:[head.current] ,
-                y:30,
-                autoAlpha:0,
-                duration:0.8
-            },
-            {autoAlpha:1}
-        );
+        // gsap.fromTo([head.current],
+        //     {
+        //         scrollTrigger:[head.current] ,
+        //         y:30,
+        //         autoAlpha:0,
+        //         duration:0.8
+        //     },
+        //     {autoAlpha:1}
+        // );
 
 
         //
@@ -68,15 +68,15 @@ let proj= useRef();
         // });
 
 
-        gsap.fromTo([proj.current],
-            {
-                scrollTrigger:[head.current] ,
-
-                autoAlpha:0,
-                duration:0.8
-            },
-            {autoAlpha:1}
-        );
+        // gsap.fromTo([proj.current],
+        //     {
+        //         scrollTrigger:[head.current] ,
+        //
+        //         autoAlpha:0,
+        //         duration:0.8
+        //     },
+        //     {autoAlpha:1}
+        // );
 
         // gsap.fromTo([image.current],
         //     {autoAlpha: 0, duration:3, delay: 3.95},
