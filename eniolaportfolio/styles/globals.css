@@ -1,3 +1,100 @@
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .imgContainer{
+        display: none;
+    }
+    .imgContainerCashPay{
+        display: none;
+    }
+
+
+    .imgContainerGrid {
+        display: none;
+    }
+    .imgContainerGrid2 {
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .imgContainer{
+        display: none;
+    }
+    .imgContainerCashPay{
+        display: none;
+    }
+
+
+    .imgContainerGrid {
+        display: none;
+    }
+    .imgContainerGrid2 {
+        display: none;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .imgContainer{
+        display: none;
+    }
+    .imgContainerCashPay{
+        display: none;
+    }
+
+
+    .imgContainerGrid {
+        display: none;
+    }
+    .imgContainerGrid2 {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+    .imgContainer {
+
+        height: 405px !important;
+
+    }
+
+    .imgContainerCashPay{
+
+        height: 405px !important;
+    }
+
+    .imgContainerGrid {
+        height: 380px !important;
+    }
+    .imgContainerGrid2 {
+        height: 380px !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px){
+
+    .imgContainer {
+
+        height: 505px !important;
+
+    }
+
+    .imgContainerCashPay{
+
+        height: 505px !important;
+    }
+    .imgContainerGrid {
+        height: 470px !important;
+    }
+    .imgContainerGrid2 {
+        height: 470px !important;
+    }
+
+}
+
 html,
 body {
   color: white;
@@ -7,7 +104,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 background: black;
 
+
 }
+
+
 
 a {
   color: inherit;
@@ -16,4 +116,155 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+.imgContainer {
+    position: relative;
+    width: 100%;
+    height: 617px;
+    overflow: hidden;
+}
+.imgContainer:after{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   right: 0;
+   background: black;
+
+
+
+}
+.imgContainerCashPay{
+    position: relative;
+    width: 100%;
+    height: 617px;
+    overflow: hidden;
+}
+
+.imgContainerCashPay:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: black;
+
+
+
+}
+
+.imgContainerGrid {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.imgContainerGrid:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-size:cover;
+    /*background-repeat: no-repeat;*/
+    /*background: red;*/
+    background-image: url("https://res.cloudinary.com/seunsanyaa/image/upload/v1641397628/Macbook_Pro_-_Light_Background_1_fnm9ur.png");
+
+
+
+}
+.imgContainerGrid2 {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.imgContainerGrid2:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-size:cover;
+    /*background-repeat: no-repeat;*/
+    /*background: red;*/
+    background-image: url("https://res.cloudinary.com/seunsanyaa/image/upload/v1641397678/Macbook_Pro_-_Light_Background_3_lw1vgy.png");
+
+
+
+}
+
+
+.bundleImage{
+    width: 100%;
+
+    position: absolute;
+
+
+}
+
+
+
+.cashPayImage{
+    width: 100%;
+
+    position: absolute;
+
+
+}
+
+.aladdinImage{
+    width: 100%;
+
+    position: absolute;
+}
+.blacklistImage{
+    width: 100%;
+
+    position: absolute;
+}
+
+button{
+    background: none;
+    border: unset;
+    color: white;
+    font-family: Okta ;
+    font-weight: 800;
+    font-size: 1em;
+    cursor: pointer;
+}
+#navlink:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-2px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+}
+
+.herohidden{
+    visibility: hidden;
+}
+.hidden{
+    visibility: hidden;
 }

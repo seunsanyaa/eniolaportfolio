@@ -24,13 +24,31 @@ export default function NavBar( ) {
 
 
     useEffect(() => {
+
+        const GSAP = require("gsap/dist/CSSRulePlugin");
+        const { CSSRulePlugin } = GSAP;
+        gsap.registerPlugin(CSSRulePlugin);
+        // do whatever you want to do with the plugin, its Working now...
+        // for example
+        let cont = CSSRulePlugin.getRule(".hidden");
+
+
         // uses el.current.querySelectorAll() internally
 
-        tl.current = gsap.timeline()
-            .from([el.current], {
+        tl.current = gsap.timeline();
+            gsap.to(cont,1,{
+
+                    visibility:"visible"
+
+
+            });
+
+            gsap.from([el.current], {
                 y:25,
                 autoAlpha:0,
-
+        //         css:{
+        //         visibility: "visible"
+        // }
             })
 
 
@@ -42,6 +60,7 @@ export default function NavBar( ) {
     const [showModal, setShowModal] = useState(false);
     return (
 
+        <div className= "hidden">
         <div className={navstyles.nav} ref={el}>
 
             <div className={styles}>
@@ -153,15 +172,17 @@ export default function NavBar( ) {
 
                         <Link href="https://drive.google.com/file/d/1sn_Hl0AWNGkbLv7Ws1wLzMpWzAZg7ICV/view?usp=sharing">
 
-                            <a  className={navstyles.menuLinkContent} >  Resume  </a>
+                            <button  className={navstyles.menuLinkContent} id="navlink">  Resume  </button>
 
 
                         </Link>
 
 
+
+
                         <Link href="mailto:eni.ajibode@gmail.com" className={navstyles.link}>
 
-                            <a className={navstyles.menuLinkContent} >  Contact me </a>
+                            <button  className={navstyles.menuLinkContent} id="navlink">  Contact me  </button>
 
 
                         </Link>
@@ -201,6 +222,7 @@ export default function NavBar( ) {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
