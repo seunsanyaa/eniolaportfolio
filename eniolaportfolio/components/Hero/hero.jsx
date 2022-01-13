@@ -57,7 +57,7 @@ export default function Hero( ) {
         gsap.fromTo([el.current],
             {autoAlpha: 0, x: -20 , delay: 10},
             {autoAlpha: 1,
-                duration: 0.5, repeat: -1, /* same as CSS .line-1 width */
+                duration: 0.5, repeat: 0, /* same as CSS .line-1 width */
             ease:  CustomEase.create("custom", "M0,0,C0,0,0.45,-0.088,0.495,0,0.584,0.179,0.409,0.82,0.5,1,0.545,1.089,1,1,1,1")
 
             }, 0);
