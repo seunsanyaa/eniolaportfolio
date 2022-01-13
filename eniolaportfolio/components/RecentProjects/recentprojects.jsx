@@ -57,7 +57,7 @@ let proj= useRef();
         let imageReveal4 =CSSRulePlugin.getRule(".imgContainerGrid2:after");
 
         gsap.to(imageReveal,
-            1.7,
+            1.2,
             {width:"0%",
                 ease: CustomEase.create("custom", "M0,0,C0.173,0,0.242,0.036,0.322,0.13,0.401,0.223,0.449,0.367,0.502,0.506,0.546,0.622,0.62,0.824,0.726,0.916,0.799,0.98,0.869,1,1,1")
 // duration:5
@@ -68,7 +68,7 @@ let proj= useRef();
             )
 
         gsap.to(imageReveal2,
-            1.7,
+            1.2,
             {width:"0%",
                 ease: CustomEase.create("custom", "M0,0,C0.173,0,0.242,0.036,0.322,0.13,0.401,0.223,0.449,0.367,0.502,0.506,0.546,0.622,0.62,0.824,0.726,0.916,0.799,0.98,0.869,1,1,1")
 // duration:5
@@ -92,7 +92,7 @@ let proj= useRef();
 //                 ,yPercent:0
                 ,scrollTrigger:imgContainerGrid.current,
 
-duration:1.7
+duration:1.2
 
             }
             );
@@ -111,7 +111,7 @@ duration:1.7
 //                 ,yPercent:0
                 ,scrollTrigger:imgContainerGrid.current,
 
-duration:1.7
+duration:1.2
 
             }
             );

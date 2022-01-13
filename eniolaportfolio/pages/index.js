@@ -7,6 +7,13 @@ import RecentProjects from "../components/RecentProjects/recentprojects";
 import WriteEmail from "../components/WriteEmail/writeemail";
 import {useEffect, useRef, useState} from "react";
 import {TimelineMax, gsap } from 'gsap'
+import Scrollbar from 'smooth-scrollbar';
+import  ScrollTrigger  from "gsap/ScrollTrigger";
+import CustomEase from 'gsap/dist/CustomEase'
+
+// import CSSRulePlugin from 'gsap/CSSRulePlugin'
+gsap.registerPlugin(ScrollTrigger,CustomEase,Scrollbar);
+
 import emailstyles from "../components/WriteEmail/writeemail.module.scss";
 export default function Home() {
 
@@ -16,11 +23,28 @@ export default function Home() {
         gsap.registerPlugin(CSSRulePlugin);
         // do whatever you want to do with the plugin, its Working now...
         // for example
-        let section = CSSRulePlugin.getRule(".viewport");
+        // let section = CSSRulePlugin.getRule(".viewport");
+        const scroller = document.querySelector('.viewport');
+        const bodyScrollBar = Scrollbar.init(scroller, { damping: 0.1, delegateTo: document, alwaysShowTracks: true });
 
-        gsap.set(section, {
-            y: -window.pageYOffset
+        ScrollTrigger.scrollerProxy(".viewport", {
+            scrollTop(value) {
+                if (arguments.length) {
+                    bodyScrollBar.scrollTop = value; // setter
+                }
+                return bodyScrollBar.scrollTop;    // getter
+            }
+            // getBoundingClientRect() {
+            //     return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+            // }
         });
+        bodyScrollBar.addListener(ScrollTrigger.update);
+
+        ScrollTrigger.defaults({ scroller: scroller });
+// when the smooth scroller updates, tell ScrollTrigger to update() too:
+        // gsap.set(section, {
+        //     y: -window.pageYOffset
+        // });
 
     })
   return (
