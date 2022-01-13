@@ -5,8 +5,8 @@ font-family: 'Okta Bold';
 
 @media (min-width: 320px) and (max-width: 374px) {
   .container{
-    height: 70vh !important;
-    padding-bottom: 0em !important;
+    height: 100% !important;
+    padding-bottom: 5em !important;
     padding-top: 8em !important;
 
     padding-right: 0em !important;
@@ -37,9 +37,9 @@ font-family: 'Okta Bold';
 
 @media (min-width: 375px) and (max-width: 424px) {
   .container{
-    height: 70vh !important;
+    height: 100% !important;
 
-    padding-bottom: 0em !important;
+    padding-bottom: 5em !important;
     padding-top: 8em !important;
 
     padding-right: 0em !important;
@@ -68,9 +68,9 @@ font-family: 'Okta Bold';
 }
 @media (min-width: 425px) and (max-width: 767px) {
   .container{
-    height: 70vh !important;
+    height: 100% !important;
 
-padding-bottom: 0em !important;
+padding-bottom: 5em !important;
     padding-top: 8em !important;
 
     padding-right: 0em !important;
@@ -97,6 +97,8 @@ padding-bottom: 0em !important;
   }
 
 }
+
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .container{
 
