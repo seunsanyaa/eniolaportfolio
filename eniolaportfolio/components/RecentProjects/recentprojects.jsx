@@ -24,6 +24,11 @@ let proj= useRef();
     let imgContainer= useRef();
     let imgContainerCashPay = useRef();
     let imgContainerGrid = useRef();
+    let imgContainerMobile= useRef();
+    let imgContainerCashPayMobile= useRef();
+    let imgContainerGridMobile = useRef();
+
+    let imgContainerGridMobile2 = useRef();
     // let imageReveal = CSSRulePlugin.getRule(".imgContainer:after")
 
 
@@ -56,6 +61,68 @@ let proj= useRef();
         let imageReveal3 = CSSRulePlugin.getRule(".imgContainerGrid:after");
         let imageReveal4 =CSSRulePlugin.getRule(".imgContainerGrid2:after");
 
+        let imageRevealMobile = CSSRulePlugin.getRule(".imgContainerMobile:after");
+
+        let imageReavealCP = CSSRulePlugin.getRule(".imgContainerCashPayMobile:after");
+
+
+        let imageRevealGridMobile = CSSRulePlugin.getRule(".imgContainerGridMobile:after");
+
+        let imageRevealGridMobile2 = CSSRulePlugin.getRule(".imgContainerGridMobile2:after");
+
+
+        gsap.to(imageRevealMobile,
+            1.2,
+            {width:"0%",
+                ease: CustomEase.create("custom", "M0,0,C0.173,0,0.242,0.036,0.322,0.13,0.401,0.223,0.449,0.367,0.502,0.506,0.546,0.622,0.62,0.824,0.726,0.916,0.799,0.98,0.869,1,1,1")
+// duration:5
+                ,scrollTrigger:imgContainerMobile.current
+
+
+            }
+        )
+
+
+
+
+        gsap.to(imageReavealCP,
+            1.2,
+            {width:"0%",
+                ease: CustomEase.create("custom", "M0,0,C0.173,0,0.242,0.036,0.322,0.13,0.401,0.223,0.449,0.367,0.502,0.506,0.546,0.622,0.62,0.824,0.726,0.916,0.799,0.98,0.869,1,1,1")
+// duration:5
+                ,scrollTrigger:imgContainerCashPayMobile.current
+
+
+            }
+        )
+
+
+
+
+        gsap.to(imageRevealGridMobile,
+            1.2,
+            {width:"0%",
+                ease: CustomEase.create("custom", "M0,0,C0.173,0,0.242,0.036,0.322,0.13,0.401,0.223,0.449,0.367,0.502,0.506,0.546,0.622,0.62,0.824,0.726,0.916,0.799,0.98,0.869,1,1,1")
+// duration:5
+                ,scrollTrigger:imgContainerGridMobile.current
+
+
+            }
+        )
+
+
+
+        gsap.to(imageRevealGridMobile2,
+            1.2,
+            {width:"0%",
+                ease: CustomEase.create("custom", "M0,0,C0.173,0,0.242,0.036,0.322,0.13,0.401,0.223,0.449,0.367,0.502,0.506,0.546,0.622,0.62,0.824,0.726,0.916,0.799,0.98,0.869,1,1,1")
+// duration:5
+                ,scrollTrigger:imgContainerGridMobile2.current
+
+
+            }
+        )
+
         gsap.to(imageReveal,
             1.2,
             {width:"0%",
@@ -80,8 +147,7 @@ let proj= useRef();
 
         gsap.fromTo(imageReveal3,
             {height:"0%"
-// duration:5
-//                 yPercent:-100
+
 
 
 
@@ -157,9 +223,13 @@ duration:1.2
 
     </div>
 
-        {/*<div className={recentprojectstyles.cover} ref={cov}> </div>*/}
 
+
+            <div className="imgContainerMobile" ref={imgContainerMobile}>
         <img className={recentprojectstyles.bundleImageMobile} src='https://res.cloudinary.com/seunsanyaa/image/upload/v1641490173/Instagram_post_-_3_egdqh5.png'/>
+            </div>
+
+
 
         <div className={recentprojectstyles.bundle}>
 
@@ -187,9 +257,11 @@ duration:1.2
 
             <img className="cashPayImage" src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641396770/Frame_1_1_yqditk.png"/>
             </div>
+
+            <div className="imgContainerCashPayMobile"   ref={imgContainerCashPayMobile}>
         <img className={recentprojectstyles.bundleImageMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641490173/Instagram_post_-_1_dpruir.png"/>
 
-
+            </div>
         <div className={recentprojectstyles.bundle}>
 
             <h3 className={recentprojectstyles.casestudy}>case study</h3>
@@ -215,9 +287,11 @@ duration:1.2
 
             {/*<img  className="aladdinImage" src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641397628/Macbook_Pro_-_Light_Background_1_fnm9ur.png"/>*/}
                 </div>
+
+                <div className="imgContainerGridMobile"   ref={imgContainerGridMobile}>
             <img className={recentprojectstyles.bundleImageMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641490180/Group_13768_h0r5yh.png"/>
 
-
+                </div>
             <div className={recentprojectstyles.bundle}>
 
                 <h3 className={recentprojectstyles.casestudy}>live project</h3>
@@ -242,8 +316,9 @@ duration:1.2
 
                 {/*<img className="blacklistImage" src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641397678/Macbook_Pro_-_Light_Background_3_lw1vgy.png"/>*/}
                 </div>
+                <div className="imgContainerGridMobile2"   ref={imgContainerGridMobile2}>
             <img className={recentprojectstyles.bundleImageMobile} src="https://res.cloudinary.com/seunsanyaa/image/upload/v1641490174/Instagram_post_-_1-1_bsukfd.png"/>
-
+                </div>
 
             <div className={recentprojectstyles.bundle}>
 
