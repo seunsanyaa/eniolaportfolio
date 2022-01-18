@@ -170,7 +170,7 @@ export default function NavBar( ) {
 
 
 
-                        <Link href="https://drive.google.com/file/d/1sn_Hl0AWNGkbLv7Ws1wLzMpWzAZg7ICV/view?usp=sharing">
+                        <Link href="https://drive.google.com/file/d/1TX4PTZJvLTwzF2fVuN9_0qXVPgwYxTWl/view?usp=sharing">
 
                             <button  className={navstyles.menuLinkContent} id="navlink">  Resume  </button>
 
