@@ -284,7 +284,7 @@ export default function RecentProjects() {
 							/>
 						</div>
 						<div className={recentprojectstyles.bundle}>
-							<h3 className={recentprojectstyles.casestudy}>live project</h3>
+							<h3 className={recentprojectstyles.casestudy}>case study</h3>
 							<h3 className={recentprojectstyles.aboutProject}>
 								<span className={recentprojectstyles.projectName}>
 									Cashpay:{' '}
@@ -315,7 +315,7 @@ export default function RecentProjects() {
 						</div>
 
 						<div className={recentprojectstyles.bundle}>
-							<h3 className={recentprojectstyles.casestudy}>live project</h3>
+							<h3 className={recentprojectstyles.casestudy}>case study</h3>
 							{/*<img src="data:image/svg+xml,%3Csvg width='97' height='2' viewBox='0 0 97 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.3' d='M1 1H96' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A"/>*/}
 							<h3 className={recentprojectstyles.aboutProject}>
 								<span className={recentprojectstyles.projectName}>
