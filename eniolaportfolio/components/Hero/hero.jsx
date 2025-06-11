@@ -66,7 +66,7 @@ export default function Hero() {
 		let tween = gsap.to([ul.current], {
 			text: {
 				value:
-					'I am a Digital product designer based in Lagos, Nigeria. I am focused on creating User-centric digital products and meaningful experiences',
+					'I am a Digital product designer based in Malta 🇲🇹. I am focused on creating User-centric digital products and meaningful experiences',
 			},
 			duration: 3,
 			delay: 1,
